@@ -1,0 +1,12 @@
+name: runSPRINT
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=2.7
+  - samtools=1.2
+  - bwa=0.7.12
+  - fastp=0.23.2

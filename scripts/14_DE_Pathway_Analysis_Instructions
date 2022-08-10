@@ -1,0 +1,14 @@
+########################################################################
+### DIFFERENTIALLY EDITED PATHWAY ANALYSIS USING METASCAPE WEBSERVER ###
+########################################################################
+
+We performed pathway analysis using the Differentially Edited Gene lists created by "14_DE_Genes_And_Sites.py" script using the web-based Metascape platform at: 
+https://metascape.org/gp/index.html#/main/step1
+
+1. We pasted the gene list in Step 1
+
+2. We chose "H.sapiens (1)" at the "Analysis as species" in Step 2
+
+3. We pressed "Expressed Analysis" in Step 3
+
+After the pathway analysis has finished, we downloaded the annotated GO and DisGeNET graphs.

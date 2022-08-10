@@ -1,0 +1,1272 @@
+details:
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C3_1
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248404_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248404_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS7_2
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248405_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248405_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_3
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248406_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248406_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_4
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248407_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248407_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_5
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248408_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248408_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_6
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248409_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248409_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C5_8
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248411_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248411_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_9
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248412_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248412_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C5_10
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248413_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248413_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_11
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248414_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248414_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_12
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248415_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248415_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C5_13
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248416_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248416_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_14
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248417_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248417_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_15
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248418_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248418_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C4_16
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248419_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248419_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_17
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248420_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248420_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C2_18
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248421_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248421_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C4_19
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248422_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248422_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_20
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248423_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248423_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_21
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248424_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248424_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_22
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248425_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248425_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_23
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248426_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248426_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C1_24
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248427_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248427_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C5_25
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248428_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248428_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C3_26
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248429_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248429_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_27
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248430_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248430_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C4_28
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248431_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248431_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_29
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248432_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248432_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_30
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248433_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248433_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_31
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248434_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248434_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C2_32
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248435_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248435_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C5_33
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248436_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248436_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C4_34
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248437_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248437_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_35
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248438_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248438_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_36
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248439_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248439_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_37
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248440_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248440_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_38
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248441_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248441_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS10_39
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248442_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248442_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_40
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248443_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248443_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: CA
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_41
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248444_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248444_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_42
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248445_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248445_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_43
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248446_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248446_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS3_44
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248447_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248447_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_45
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248448_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248448_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_46
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248449_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248449_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_47
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248450_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248450_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS9_48
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248451_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248451_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS8_49
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248452_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248452_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_50
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248453_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248453_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_51
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248454_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248454_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_52
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248455_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248455_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C3_53
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248456_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248456_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C4_54
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248457_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248457_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C3_55
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248458_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248458_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C1_56
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248459_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248459_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C1_57
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248460_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248460_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C2_58
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248461_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248461_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C1_59
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248462_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248462_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C1_60
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248463_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248463_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C2_61
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248464_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248464_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C2_62
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248465_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248465_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: C3_63
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248466_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248466_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: WM
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_64
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248467_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248467_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_65
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248468_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248468_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_66
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248469_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248469_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_67
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248470_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248470_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_68
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248471_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248471_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_71
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248474_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248474_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_72
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248475_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248475_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS10_73
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248476_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248476_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_74
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248477_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248477_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS1_76
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248479_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248479_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS2_77
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248480_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248480_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS10_79
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248482_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248482_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS7_86
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248489_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248489_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS6_89
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248492_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248492_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS4_90
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248493_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248493_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS7_91
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248494_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248494_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: AL
+- algorithm:
+    aligner: star
+    expression_caller:
+    - salmon
+    quality_format: standard
+    quantify_genome_alignments: true
+    trim_reads: false
+    strandedness: auto
+  analysis: RNA-seq
+  description: MS5_94
+  files:
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248497_1.fastq.gz
+  - /media/kokyriakidis/PRODUCTION/EDITING/bcbio/MS/input/SRR10248497_2.fastq.gz
+  genome_build: hg38
+  metadata:
+    category: NAWM
+fc_name: MS
+resources:
+  default:
+    cores: 10
+    memory: 8G
+upload:
+  dir: ../final

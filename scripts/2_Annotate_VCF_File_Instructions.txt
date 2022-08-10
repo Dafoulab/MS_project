@@ -1,0 +1,32 @@
+######################################################
+### VCF FILE ANNOTATION USING OPENCRAVAT WEBSERVER ###
+######################################################
+
+We annotated the VCF file created by "1_Convert_SPRINT_Output_To_VCF_Format.py" script using the web-based OpenCravat platform at: 
+https://run.opencravat.org/
+
+We used the following parameters:
+
+1. Genome: hg38/GRCh38
+
+2. Annotations:
+    - ClinPred (1.0.0)
+    - Clinvar (2021.10.01)
+    - dbSNP (154.0.2)
+    - ENCODE TFBS (1.0.2)
+    - Ensembl Regulatory Build (1.0.3)
+    - gnomAD3 (1.1.0)
+    - hg19 coordinates
+    - Human Phenotype Ontology (1.0.0)
+    - miRBase (1.0.1)
+    - ncRNA (2019.08.19)
+    - Pseudogene (28.0.1)
+    - Repeat Sequences (2020.10.16)
+
+
+After the annotation has finished, we downloaded the annotated *TSV* file.
+
+
+
+
+
