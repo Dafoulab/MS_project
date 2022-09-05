@@ -43,7 +43,7 @@ The configuration file used to run the bcbio bulk RNASeq analysis, named `MS_GSM
 
 The `MS_GSM4114296_Sample_Metadata.csv` file, found inside the `bcbio/metadata` folder, contains the sample metadata.
 
-The `MS_GSM4114296_Sample_Metrics.xlsx` file, found inside the `bcbio/metrics` folder, contains several sequencing and mapping metrics used to exclude samples from further RNA Editing analysis with SPRINT.
+The `MS_GSM4114296_Sample_Metrics.csv` file, found inside the `bcbio/metrics` folder, contains several sequencing and mapping metrics used to exclude samples from further RNA Editing analysis with SPRINT.
 
 
 ## Identification of RNA editing sites using SPRINT
