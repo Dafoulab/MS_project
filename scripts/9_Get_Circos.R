@@ -1,8 +1,8 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 ##############################################################
 ### WM NAWM AL CA AFTER QC MICROGLIA AND SAMPLE FILTRATION ###
@@ -117,6 +117,7 @@ circos.text(x=3,y=5, sector.index = "Control WM", "Control WM", facing = 'bendin
 circos.text(x=3,y=5, sector.index = "MS NAWM", "MS NAWM", facing = 'bending.inside', track.index = 1)
 circos.text(x=3,y=5, sector.index = "MS AL", "MS AL", facing = 'bending.inside', track.index = 1)
 circos.text(x=3,y=5, sector.index = "MS CA", "MS CA", facing = 'bending.inside', track.index = 1)
+
 
 circos.clear()
 

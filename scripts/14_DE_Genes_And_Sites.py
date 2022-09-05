@@ -1,14 +1,14 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 import pandas as pd
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 ##################################
@@ -49,7 +49,7 @@ subprocess.run(cmd, shell=True)
 ###################################################################
 
 
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -96,7 +96,7 @@ fvfile.append(header)
 for row in range(0, len(WMvsAL_DE_SITES)):
     fvfile.append(WMvsAL_DE_SITES[row])
 
-f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsAL/SITES/MS_GSM4114296_WMvsAL_DE_SITES.tsv", "w")
+f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsAL/SITES/MS_GSE138614_WMvsAL_DE_SITES.tsv", "w")
 
 for line in fvfile:
     print("\t".join(line), file=f)
@@ -114,7 +114,7 @@ for row in range(0, len(body)):
 WMvsAL_df = pd.DataFrame(pd.Series(WMvsAL_DE_GENES).to_frame("NCBI_Gene_Description"))
 WMvsAL_df.reset_index(inplace=True)
 WMvsAL_df = WMvsAL_df.rename(columns = {'index':'Gene'})
-WMvsAL_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsAL/GENES/MS_GSM4114296_WMvsAL_DE_GENES.csv", na_rep="none", header=True, index=False)
+WMvsAL_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsAL/GENES/MS_GSE138614_WMvsAL_DE_GENES.csv", na_rep="none", header=True, index=False)
 
 
 
@@ -135,7 +135,7 @@ fvfile.append(header)
 for row in range(0, len(WMvsCA_DE_SITES)):
     fvfile.append(WMvsCA_DE_SITES[row])
 
-f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsCA/SITES/MS_GSM4114296_WMvsCA_DE_SITES.tsv", "w")
+f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsCA/SITES/MS_GSE138614_WMvsCA_DE_SITES.tsv", "w")
 
 for line in fvfile:
     print("\t".join(line), file=f)
@@ -153,7 +153,7 @@ for row in range(0, len(body)):
 WMvsCA_df = pd.DataFrame(pd.Series(WMvsCA_DE_GENES).to_frame("NCBI_Gene_Description"))
 WMvsCA_df.reset_index(inplace=True)
 WMvsCA_df = WMvsCA_df.rename(columns = {'index':'Gene'})
-WMvsCA_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsCA/GENES/MS_GSM4114296_WMvsCA_DE_GENES.csv", na_rep="none", header=True, index=False)
+WMvsCA_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/WMvsCA/GENES/MS_GSE138614_WMvsCA_DE_GENES.csv", na_rep="none", header=True, index=False)
 
 
 
@@ -176,7 +176,7 @@ fvfile.append(header)
 for row in range(0, len(NAWMvsAL_DE_SITES)):
     fvfile.append(NAWMvsAL_DE_SITES[row])
 
-f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsAL/SITES/MS_GSM4114296_NAWMvsAL_DE_SITES.tsv", "w")
+f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsAL/SITES/MS_GSE138614_NAWMvsAL_DE_SITES.tsv", "w")
 
 for line in fvfile:
     print("\t".join(line), file=f)
@@ -194,7 +194,7 @@ for row in range(0, len(body)):
 NAWMvsAL_df = pd.DataFrame(pd.Series(NAWMvsAL_DE_GENES).to_frame("NCBI_Gene_Description"))
 NAWMvsAL_df.reset_index(inplace=True)
 NAWMvsAL_df = NAWMvsAL_df.rename(columns = {'index':'Gene'})
-NAWMvsAL_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsAL/GENES/MS_GSM4114296_NAWMvsAL_DE_GENES.csv", na_rep="none", header=True, index=False)
+NAWMvsAL_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsAL/GENES/MS_GSE138614_NAWMvsAL_DE_GENES.csv", na_rep="none", header=True, index=False)
 
 
 
@@ -214,7 +214,7 @@ fvfile.append(header)
 for row in range(0, len(NAWMvsCA_DE_SITES)):
     fvfile.append(NAWMvsCA_DE_SITES[row])
 
-f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsCA/SITES/MS_GSM4114296_NAWMvsCA_DE_SITES.tsv", "w")
+f = open(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsCA/SITES/MS_GSE138614_NAWMvsCA_DE_SITES.tsv", "w")
 
 for line in fvfile:
     print("\t".join(line), file=f)
@@ -232,7 +232,7 @@ for row in range(0, len(body)):
 NAWMvsCA_df = pd.DataFrame(pd.Series(NAWMvsCA_DE_GENES).to_frame("NCBI_Gene_Description"))
 NAWMvsCA_df.reset_index(inplace=True)
 NAWMvsCA_df = NAWMvsCA_df.rename(columns = {'index':'Gene'})
-NAWMvsCA_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsCA/GENES/MS_GSM4114296_NAWMvsCA_DE_GENES.csv", na_rep="none", header=True, index=False)
+NAWMvsCA_df.to_csv(f"{OUTPUT_POSTPROCESSING_PATH}/14_DE_GENES_AND_SITES/NAWMvsCA/GENES/MS_GSE138614_NAWMvsCA_DE_GENES.csv", na_rep="none", header=True, index=False)
 
 
 

@@ -1,13 +1,13 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 ##################################
 ### Create directory structure ###
@@ -19,7 +19,7 @@ subprocess.run(cmd, shell=True)
 ###########################################
 ### Load WMvsNAWMvsALvsCA filtered file ###
 ###########################################
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -36,7 +36,7 @@ variant_file.close()
 ####################################
 ### Load EAE NAIVE filtered file ###
 ####################################
-variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/EAE_FILES/EAE_ADAR_NAIVE.tsv")
+variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/EAE_FILES/EAE_ADAR_NAIVE.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -53,7 +53,7 @@ variant_file.close()
 ##########################################
 ### Load EAE PRECLINICAL filtered file ###
 ##########################################
-variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/EAE_FILES/EAE_ADAR_PRECLINICAL.tsv")
+variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/EAE_FILES/EAE_ADAR_PRECLINICAL.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -70,7 +70,7 @@ variant_file.close()
 #######################################
 ### Load EAE CLINICAL filtered file ###
 #######################################
-variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/EAE_FILES/EAE_ADAR_CLINICAL.tsv")
+variant_file = open("/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/EAE_FILES/EAE_ADAR_CLINICAL.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -88,7 +88,7 @@ variant_file.close()
 ########################################
 ### Load WMvsNAIVE Common Sites file ###
 ########################################
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/WMvsNAIVE/COMMON/MS_GSM4114296_WMvsNAIVE_SITES_FROM_COMMON_GENES.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/WMvsNAIVE/COMMON/SITES/MS_GSE138614_WMvsNAIVE_SITES_FROM_COMMON_GENES.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -106,7 +106,7 @@ variant_file.close()
 ################################################
 ### Load NAWMvsPRECLINICAL Common Sites file ###
 ################################################
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/NAWMvsPRECLINICAL/COMMON/MS_GSM4114296_NAWMvsPRECLINICAL_SITES_FROM_COMMON_GENES.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/NAWMvsPRECLINICAL/COMMON/SITES/MS_GSE138614_NAWMvsPRECLINICAL_SITES_FROM_COMMON_GENES.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -125,7 +125,7 @@ variant_file.close()
 ###########################################
 ### Load ALvsCLINICAL Common Sites file ###
 ###########################################
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/ALvsCLINICAL/COMMON/MS_GSM4114296_ALvsCLINICAL_SITES_FROM_COMMON_GENES.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/ALvsCLINICAL/COMMON/SITES/MS_GSE138614_ALvsCLINICAL_SITES_FROM_COMMON_GENES.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -144,7 +144,7 @@ variant_file.close()
 ###########################################
 ### Load CAvsCLINICAL Common Sites file ###
 ###########################################
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/CAvsCLINICAL/COMMON/MS_GSM4114296_CAvsCLINICAL_SITES_FROM_COMMON_GENES.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/CAvsCLINICAL/COMMON/SITES/MS_GSE138614_CAvsCLINICAL_SITES_FROM_COMMON_GENES.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []

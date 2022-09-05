@@ -1,32 +1,38 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 import pandas as pd
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 ##################################
 #### Create directory structure ##
 ##################################
-cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GENES"
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/WM/GENES"
 subprocess.run(cmd, shell=True)
-cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GRAPHS/WM"
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/NAWM/GENES"
 subprocess.run(cmd, shell=True)
-cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GRAPHS/NAWM"
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/AL/GENES"
 subprocess.run(cmd, shell=True)
-cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GRAPHS/AL"
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/CA/GENES"
 subprocess.run(cmd, shell=True)
-cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GRAPHS/CA"
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/WM/GRAPHS"
+subprocess.run(cmd, shell=True)
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/NAWM/GRAPHS"
+subprocess.run(cmd, shell=True)
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/AL/GRAPHS"
+subprocess.run(cmd, shell=True)
+cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/CA/GRAPHS"
 subprocess.run(cmd, shell=True)
 
 
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -59,7 +65,7 @@ for row in range(0, len(body)):
 WM_df = pd.DataFrame(pd.Series(WM_GENES).to_frame("NCBI_Gene_Description"))
 WM_df.reset_index(inplace=True)
 WM_df = WM_df.rename(columns = {'index':'Gene'})
-WM_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GENES/MS_GSM4114296_WM_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
+WM_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/WM/GENES/MS_GSE138614_WM_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
 
 
 
@@ -85,7 +91,7 @@ for row in range(0, len(body)):
 NAWM_df = pd.DataFrame(pd.Series(NAWM_GENES).to_frame("NCBI_Gene_Description"))
 NAWM_df.reset_index(inplace=True)
 NAWM_df = NAWM_df.rename(columns = {'index':'Gene'})
-NAWM_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GENES/MS_GSM4114296_NAWM_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
+NAWM_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/NAWM/GENES/MS_GSE138614_NAWM_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
 
 
 
@@ -107,7 +113,7 @@ for row in range(0, len(body)):
 AL_df = pd.DataFrame(pd.Series(AL_GENES).to_frame("NCBI_Gene_Description"))
 AL_df.reset_index(inplace=True)
 AL_df = AL_df.rename(columns = {'index':'Gene'})
-AL_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GENES/MS_GSM4114296_AL_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
+AL_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/AL/GENES/MS_GSE138614_AL_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
 
 
 
@@ -131,6 +137,6 @@ for row in range(0, len(body)):
 CA_df = pd.DataFrame(pd.Series(CA_GENES).to_frame("NCBI_Gene_Description"))
 CA_df.reset_index(inplace=True)
 CA_df = CA_df.rename(columns = {'index':'Gene'})
-CA_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/GENES/MS_GSM4114296_CA_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
+CA_df.to_csv(f'{OUTPUT_POSTPROCESSING_PATH}/13_PATHWAY_ANALYSIS/CA/GENES/MS_GSE138614_CA_PATHWAY_GENES.csv', na_rep="none", header=True, index=False)
 
 

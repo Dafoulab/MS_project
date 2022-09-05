@@ -1,8 +1,8 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
@@ -19,7 +19,7 @@ TOTAL_CA_AFTER_QC = 11
 
 
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 ##################################
@@ -29,7 +29,7 @@ cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/3_OC_ANNOTATED"
 subprocess.run(cmd, shell=True)
 
 
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/2_OC_OUTPUT/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT.vcf.gz.variant.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/2_OC_OUTPUT/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT.vcf.gz.variant.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -544,7 +544,7 @@ for row in range(0, len(body)):
 
 variant_file.close()
 
-f = open(f"{OUTPUT_POSTPROCESSING_PATH}/3_OC_ANNOTATED/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_Annotated.tsv", "w")
+f = open(f"{OUTPUT_POSTPROCESSING_PATH}/3_OC_ANNOTATED/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_Annotated.tsv", "w")
 
 for line in fvfile:
     print("\t".join(line), file=f)

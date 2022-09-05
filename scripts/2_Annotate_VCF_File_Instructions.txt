@@ -1,3 +1,9 @@
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
+
 ######################################################
 ### VCF FILE ANNOTATION USING OPENCRAVAT WEBSERVER ###
 ######################################################
@@ -19,6 +25,7 @@ We used the following parameters:
     - hg19 coordinates
     - Human Phenotype Ontology (1.0.0)
     - miRBase (1.0.1)
+    - NCBI Gene (2019.08.02)
     - ncRNA (2019.08.19)
     - Pseudogene (28.0.1)
     - Repeat Sequences (2020.10.16)

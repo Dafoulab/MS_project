@@ -1,15 +1,15 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 import pandas as pd
 import matplotlib.pyplot as plt
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 ##################################
@@ -20,7 +20,7 @@ subprocess.run(cmd, shell=True)
 
 
 
-variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
+variant_file = open(f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv")
 read_variant_file = csv.reader(variant_file, delimiter="\t")
 
 vfile = []
@@ -157,6 +157,6 @@ plt.xticks(rotation=0)
 ax.set_xticklabels(['CONTROL WM', 'MS NAWM', 'MS AL', 'MS CA'])
 
 
-plt.savefig(f'{OUTPUT_POSTPROCESSING_PATH}/12_ALU_DISTRIBUTION/MS_GSM4114296_ALU_DISTRIBUTION.png')
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/12_ALU_DISTRIBUTION/MS_GSE138614_ALU_DISTRIBUTION.pdf")
 
 plt.show()

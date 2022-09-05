@@ -1,21 +1,21 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 
 STUDY_CATEGORY = "MS"
-STUDY_ACCESSION = "GSM4114296"
+STUDY_ACCESSION = "GSE138614"
 
-SPRINT_OUTPUT_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/SPRINT/output"
-SCRIPTS_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/scripts"
-RESOURCES_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources"
-REFERENCE_GENOME_FILE = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/hg38-noalt/GCA_000001405.15_GRCh38_no_alt_analysis_set_maskedGRC_exclusions_v2.fasta"
+SPRINT_OUTPUT_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/SPRINT/output"
+SCRIPTS_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/scripts"
+RESOURCES_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources"
+REFERENCE_GENOME_FILE = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/hg38-noalt/GCA_000001405.15_GRCh38_no_alt_analysis_set_maskedGRC_exclusions_v2.fasta"
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 ##################################

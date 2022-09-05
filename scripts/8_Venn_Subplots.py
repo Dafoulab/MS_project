@@ -1,15 +1,15 @@
-##############################
-##############################
-### MS GSM4114296 ANALYSIS ###
-##############################
-##############################
+#############################
+#############################
+### MS GSE138614 ANALYSIS ###
+#############################
+#############################
 
 import csv
 import subprocess
 from matplotlib_venn import venn2, venn2_circles
 import matplotlib.pyplot as plt
 
-HUMAN_TO_MOUSE_DB_INPUT = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/Human2Mouse/HMD_HumanPhenotype.txt"
+HUMAN_TO_MOUSE_DB_INPUT = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/Human2Mouse/HMD_HumanPhenotype.txt"
 
 #####################################
 ### Create Human to Mouse Gene DB ###
@@ -53,31 +53,37 @@ for (ms,eae) in [("AL", "CLINICAL"), ("CA", "CLINICAL"), ("WM", "NAIVE"), ("NAWM
     MS_SAMPLE = ms
     EAE_SAMPLE = eae
 
-    OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+    OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
     
-    EAE_FILE_INPUT = f"/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/resources/EAE_FILES/EAE_ADAR_{EAE_SAMPLE}.tsv"
+    EAE_FILE_INPUT = f"/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/resources/EAE_FILES/EAE_ADAR_{EAE_SAMPLE}.tsv"
     
-    WMvsNAWMvsALvsCA_FILE_AFTER_QC_MICROGLIA_SAMPLE_PLUS_T_TEST_INPUT = f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSM4114296_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv"
+    WMvsNAWMvsALvsCA_FILE_AFTER_QC_MICROGLIA_SAMPLE_PLUS_T_TEST_INPUT = f"{OUTPUT_POSTPROCESSING_PATH}/7_T_TEST/MS_GSE138614_WMvsNAWMvsALvsCA_A2IC2U_SPRINT_QC_MICROGLIA_SAMPLE_Filtered_Plus_MeanAF_T_Test.tsv"
 
-    EAE_vs_MS_COMMON_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_COMMON_GENES.tsv"
-    EAE_vs_MS_COMMON_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_SITES_FROM_COMMON_GENES.tsv"
+    EAE_vs_MS_COMMON_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/GENES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_COMMON_GENES.txt"
+    EAE_vs_MS_COMMON_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/SITES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_SITES_FROM_COMMON_GENES.tsv"
     
-    MS_ONLY_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_{MS_SAMPLE}_ONLY_GENES.tsv"
-    MS_ONLY_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_{MS_SAMPLE}_ONLY_SITES.tsv"
+    MS_ONLY_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/GENES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_{MS_SAMPLE}_ONLY_GENES.txt"
+    MS_ONLY_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/SITES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_{MS_SAMPLE}_ONLY_SITES.tsv"
 
-    EAE_ONLY_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_{EAE_SAMPLE}_ONLY_GENES.tsv"
-    EAE_ONLY_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/MS_GSM4114296_{MS_SAMPLE}vs{EAE_SAMPLE}_{EAE_SAMPLE}_ONLY_SITES.tsv"
+    EAE_ONLY_GENES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/GENES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_{EAE_SAMPLE}_ONLY_GENES.txt"
+    EAE_ONLY_SITES_OUTPUT = f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/SITES/MS_GSE138614_{MS_SAMPLE}vs{EAE_SAMPLE}_{EAE_SAMPLE}_ONLY_SITES.tsv"
 
     
 
     ##################################
     ### Create directory structure ###
     ##################################
-    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY"
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/GENES"
     subprocess.run(cmd, shell=True)
-    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY"
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{MS_SAMPLE}_ONLY/SITES"
     subprocess.run(cmd, shell=True)
-    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON"
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/GENES"
+    subprocess.run(cmd, shell=True)
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/{EAE_SAMPLE}_ONLY/SITES"
+    subprocess.run(cmd, shell=True)
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/GENES"
+    subprocess.run(cmd, shell=True)
+    cmd = f"mkdir -p {OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/{MS_SAMPLE}vs{EAE_SAMPLE}/COMMON/SITES"
     subprocess.run(cmd, shell=True)
 
 
@@ -320,7 +326,7 @@ venn2_circles(subsets = (WM_only_genes_count, NAIVE_only_genes_count, common_WM_
 
 plt.title("Number of common and distinct potentially edited genes between CONTROL WM and EAE NAIVE samples", loc='center', wrap=True, fontsize=14)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/WMvsNAIVE/MS_GSM4114296_WMvsNAIVE_VENN.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/WMvsNAIVE/MS_GSE138614_WMvsNAIVE_VENN.pdf")
 
 plt.show()
 
@@ -345,7 +351,7 @@ venn2_circles(subsets = (NAWM_only_genes_count, PRECLINICAL_only_genes_count, co
 
 plt.title("Number of common and distinct potentially edited genes between MS NAWM and EAE PRECLINICAL samples", loc='center', wrap=True, fontsize=14)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/NAWMvsPRECLINICAL/MS_GSM4114296_NAWMvsPRECLINICAL_VENN.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/NAWMvsPRECLINICAL/MS_GSE138614_NAWMvsPRECLINICAL_VENN.pdf")
 
 plt.show()
 
@@ -369,7 +375,7 @@ venn2_circles(subsets = (AL_only_genes_count, CLINICAL_only_genes_count, common_
 
 plt.title("Number of common and distinct potentially edited genes between MS AL and EAE CLINICAL samples", loc='center', wrap=True, fontsize=14)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/ALvsCLINICAL/MS_GSM4114296_ALvsCLINICAL_VENN.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/ALvsCLINICAL/MS_GSE138614_ALvsCLINICAL_VENN.pdf")
 
 plt.show()
 
@@ -395,7 +401,7 @@ venn2_circles(subsets = (CA_only_genes_count, CLINICAL_only_genes_count, common_
 
 plt.title("Number of common and distinct potentially edited genes between MS CA and EAE CLINICAL samples", loc='center', wrap=True, fontsize=14)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/CAvsCLINICAL/MS_GSM4114296_CAvsCLINICAL_VENN.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/CAvsCLINICAL/MS_GSE138614_CAvsCLINICAL_VENN.pdf")
 
 plt.show()
 
@@ -464,7 +470,7 @@ venn2_circles(subsets = (CA_only_genes_count, CLINICAL_only_genes_count, common_
 
 plt.suptitle("Number of common and distinct potentially edited genes between MS and EAE samples", wrap=True, size=18)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/MS_GSM4114296_MSvsEAE_VENN.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/8_VENN_DIAGRAMS/MS_GSE138614_MSvsEAE_VENN.pdf")
 
 
 plt.show()

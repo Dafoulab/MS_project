@@ -1,6 +1,6 @@
 ##############################
 ##############################
-### MS GSM4114296 ANALYSIS ###
+### MS GSE138614 ANALYSIS ###
 ##############################
 ##############################
 
@@ -9,9 +9,9 @@ import subprocess
 import matplotlib.pyplot as plt
 
 
-SPRINT_PROCESSED_OUTPUT_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/SPRINT/output_processed"
+SPRINT_PROCESSED_OUTPUT_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/SPRINT/output_processed"
 
-OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSM4114296/postprocessing"
+OUTPUT_POSTPROCESSING_PATH = "/media/kokyriakidis/PRODUCTION/EDITING/SPRINT/MS_GSE138614/postprocessing"
 
 
 
@@ -336,7 +336,7 @@ axis[1, 1].set_ylabel("Percent of RNA editing types (%)", fontsize=12)
 
 plt.suptitle("Distribution of 12 types of RNA editing events detected by SPRINT. Data represent the percentage of inferred RNA editing events detected in different sample types.", wrap=True, fontsize=16)
 
-plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/10_DUPLETS/MS_GSM4114296_DUPLETS.png")
+plt.savefig(f"{OUTPUT_POSTPROCESSING_PATH}/10_DUPLETS/MS_GSE138614_DUPLETS.pdf")
 
 plt.show()
 
